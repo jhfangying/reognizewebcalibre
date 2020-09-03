@@ -14,7 +14,7 @@ sourceCursor=sourceConn.cursor()
 def getSourceDataById(table,id):
     sql='SELECT * from '+table+' where id='+str(id)
     cursor=sourceConn.execute(sql)
-    rows=cursor.fetchall();
+    rows=cursor.fetchall()
     if(len(rows)==0):
         return None
     return  rows[0]
